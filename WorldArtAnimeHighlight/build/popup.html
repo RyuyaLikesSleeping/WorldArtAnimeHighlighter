@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./popup.css">
+        <script type="text/javascript" src="./popup.js"></script>
+        <title>
+            World Art Anime Highlighter
+        </title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row center">
+                <h1 class="header">
+                    World Art Anime Highlighter
+                </h1>
+            </div>
+            <hr>
+            <div class="row start">
+                <label class="title">
+                    Состояние расширения
+                </label>
+                <select id="extensionEnabled" class="selector">
+                    <option value="true" selected>Включено</option>
+                    <option value="false">Выключено</option>
+                </select>
+            </div>
+            <div class="row start">
+                <label class="title">
+                    Последнее обновление списков
+                </label>
+                <p id="lastUpdateDate" class="update">
+                    никогда
+                </p>
+            </div>
+            <hr>
+            <div class="row start">
+                <label class="title">
+                    Буду смотреть
+                </label>
+                <input type="text" id="wantSeeUrl" class="field">
+            </div>
+            <div class="row start">
+                <label class="title">
+                    Смотрю
+                </label>
+                <input type="text" id="seeUrl" class="field">
+            </div>
+            <div class="row start">
+                <label class="title">
+                    Просмотрено
+                </label>
+                <input type="text" id="seenUrl" class="field">
+            </div>
+            <div class="row start">
+                <label class="title">
+                    Брошено
+                </label>
+                <input type="text" id="droppedUrl" class="field">
+            </div>
+            <div class="row start">
+                <label class="title">
+                    В коллекции
+                </label>
+                <input type="text" id="inCollectionUrl" class="field">
+            </div>
+            <hr>
+            <div class="row start">
+                <p id="status" class="status">
+                    Готово
+                </p>
+                <button type="button" id="saveOrUpdateListsUrl" class="button">
+                    Сохранить / Обновить
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+﻿{
+    "manifest_version": 2,
+    "name": "World Art Anime Highlighter",
+    "version": "1.0",
+    "description": "Расширение для подсветки аниме из списков пользователя на сайте World Art, таких как смотрю/просмотрено/брошено и так далее.",
+    "icons": {
+        "16": "16x16.png",
+        "24": "24x24.png",
+        "32": "32x32.png",
+        "48": "48x48.png",
+        "128": "128x128.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "16x16.png",
+            "24": "24x24.png",
+            "32": "32x32.png",
+            "48": "48x48.png",
+            "128": "128x128.png"
+        },
+        "default_title": "World Art Anime Highlighter",
+        "default_popup": "./popup.html"
+    },
+    "author": "Ryuya",
+    "background": {
+        "scripts": [ "./event.js" ],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [ "*://*.world-art.ru/*" ],
+            "js": [ "./content.js" ],
+            "css": [ "./content.css" ]
+        }
+    ],
+    "homepage_url": "https://github.com/Ryuya-dono/WorldArtAnimeHighlighter",
+    "incognito": "spanning",
+    "minimum_chrome_version": "50",
+    "offline_enabled": false,
+    "permissions": [
+        "storage",
+        "*://*.world-art.ru/*"
+    ]
+}

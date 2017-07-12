@@ -1,0 +1,16 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "noEmitOnError": true,
+        "removeComments": true,
+        "target": "es6",
+        "outDir": "./build/"
+    },
+    "include": [
+        "./source/**/*.ts"
+    ],
+    "exclude": [
+        "./node_modules",
+        "./build"
+    ]
+}

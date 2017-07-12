@@ -1,0 +1,105 @@
+﻿.container
+{
+    width: 500px;
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    align-content: stretch;
+    margin: 10px 5px;
+}
+
+.row.start
+{
+    justify-content: flex-start;
+}
+
+.row.center
+{
+    justify-content: center;
+}
+
+.row .header
+{
+    flex: 0 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.row .title
+{
+    flex: 1 0 0%;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.row .selector
+{
+    flex: 0 0 auto;
+    font-size: 14px;
+    width: 120px;
+    height: 28px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 0px 6px;
+}
+
+.row .update
+{
+    flex: 1 0 auto;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: right;
+    margin: 0px;
+}
+
+.row .field
+{
+    flex: 1 0 55%;
+    height: 18px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.row .status
+{
+    visibility: hidden;
+    flex: 1 0 20%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: #5cb85c;
+    margin: 0px;
+    padding: 4px 0px;
+}
+
+.row .button
+{
+    flex: 1 0 0%;
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff;
+    background-color: #5cb85c;
+    border: 1px solid #5cb85c;
+    border-radius: 4px;
+    margin: 0px;
+    padding: 4px 8px;
+}
+
+.row .button:hover
+{
+    background-color: #449d44;
+    border-color: #419641;
+}
+
+.row .button:active
+{
+    background-color: #449d44;
+    border-color: #419641;
+}

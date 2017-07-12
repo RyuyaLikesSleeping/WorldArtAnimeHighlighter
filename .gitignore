@@ -3,3 +3,5 @@
 ################################################################################
 
 /WorldArtAnimeHighlight/bin
+/WorldArtAnimeHighlight/node_modules
+/WorldArtAnimeHighlight/obj/

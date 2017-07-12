@@ -1,0 +1,20 @@
+{
+    "name": "WorldArtAnimeHighlighter",
+    "version": "1.0.0",
+    "description": "World Art Anime Highlighter",
+    "author": {
+        "name": "Ryuya"
+    },
+    "files": [
+        "./source"
+    ],
+    "scripts": {
+        "build": "tsc && cpx \"./source/*.{html,css,json,png}\" ./build"
+    },
+    "devDependencies": {
+        "typescript": "2.1.6",
+        "@types/chrome": "0.0.40",
+        "cpx": "1.5.0"
+    },
+    "private": true
+}
